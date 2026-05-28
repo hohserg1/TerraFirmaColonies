@@ -1,0 +1,12 @@
+{
+  "type": "recipe",
+  "crafter": "lumberjack_custom",
+  "inputs": [
+    {
+      "item": "tfc:wood/log/kapok"
+    }
+  ],
+  "intermediate": "minecraft:air",
+  "result": "tfc:wood/stripped_log/kapok",
+  "tool": "minecolonies:axe"
+}

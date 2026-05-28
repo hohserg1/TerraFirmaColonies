@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:stone_bricks"
+    },
+    {
+      "tag": "forge:stone_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "domum_ornamentum:beige_stone_bricks"
+  }
+}

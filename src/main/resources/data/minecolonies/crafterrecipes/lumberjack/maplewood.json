@@ -1,0 +1,12 @@
+{
+  "type": "recipe",
+  "crafter": "lumberjack_custom",
+  "inputs": [
+    {
+      "item": "tfc:wood/wood/maple"
+    }
+  ],
+  "intermediate": "minecraft:air",
+  "result": "tfc:wood/stripped_wood/maple",
+  "tool": "minecolonies:axe"
+}

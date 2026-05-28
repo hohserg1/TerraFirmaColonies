@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.ckeeze.terrafirmacolonies.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "terrafirmacolonies.refmap.json",
+  "mixins": [
+    "BuildingFarmerMixin",
+    "EntityAIWorkFarmerMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

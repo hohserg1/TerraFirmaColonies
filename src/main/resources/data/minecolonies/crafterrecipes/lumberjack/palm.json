@@ -1,0 +1,12 @@
+{
+  "type": "recipe",
+  "crafter": "lumberjack_custom",
+  "inputs": [
+    {
+      "item": "tfc:wood/log/palm"
+    }
+  ],
+  "intermediate": "minecraft:air",
+  "result": "tfc:wood/stripped_log/palm",
+  "tool": "minecolonies:axe"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "S": {
+      "tag": "forge:stone_slab"
+    },
+    "X": {
+      "item": "tfc:metal/ingot/wrought_iron"
+    }
+  },
+  "pattern": [
+    " X ",
+    "SSS",
+    "LLL"
+  ],
+  "result": {
+    "item": "domum_ornamentum:architectscutter"
+  },
+  "show_notification": true
+}

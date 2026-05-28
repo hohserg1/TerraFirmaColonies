@@ -1,0 +1,12 @@
+{
+  "type": "recipe",
+  "crafter": "lumberjack_custom",
+  "inputs": [
+    {
+      "item": "tfc:wood/log/sequoia"
+    }
+  ],
+  "intermediate": "minecraft:air",
+  "result": "tfc:wood/stripped_log/sequoia",
+  "tool": "minecolonies:axe"
+}

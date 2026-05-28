@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "firmalife:metal/block/stainless_steel",
+    "firmalife:metal/block/chromium",
+    "firmalife:sealed_bricks",
+    "firmalife:rustic_bricks",
+    "firmalife:polished_sealed_bricks",
+    "firmalife:treated_wood",
+    "firmalife:tiles",
+    "firmalife:chiseled_sealed_bricks",
+    "#forge:sandstone",
+    "#forge:smooth_stone",
+    "#forge:stone_bricks",
+    "#tfc:metal_plated_blocks"
+  ]
+}
