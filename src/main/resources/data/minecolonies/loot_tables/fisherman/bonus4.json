@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tfc:metal/chain/gold",
+          "name": "tfc:metal/chain/bronze",
           "quality": 1
         },
         {
