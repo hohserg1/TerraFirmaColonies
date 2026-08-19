@@ -1,5 +1,6 @@
 package net.ckeeze.terrafirmacolonies;
 
+import net.ckeeze.terrafirmacolonies.api.TFCCraftingTypes;
 import net.ckeeze.terrafirmacolonies.api.TFCEquipmentTypes;
 import net.ckeeze.terrafirmacolonies.placementhandlers.PlacementHandlerInitializer;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,7 +21,8 @@ public class Terrafirmacolonies {
 
     // Create a Deferred Register to hold Blocks which will all be registered under the "terrafirmacolonies" namespace
     public Terrafirmacolonies(FMLJavaModLoadingContext context) {
-        TFCEquipmentTypes.DEFERRED_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
+        TFCEquipmentTypes.DEFERRED_REGISTER.register(context.getModEventBus());
+        TFCCraftingTypes.DEFERRED_REGISTER.register(context.getModEventBus());
 
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
