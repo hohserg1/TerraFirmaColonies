@@ -32,6 +32,7 @@
     "ItemScepterBeekeeperMixin",
     "JobBlacksmithMixin",
     "ModEquipmentTypesMixin",
+    "OpenCraftingGUIMessageMixin",
     "PathFindingUtilsMixin",
     "PondMixin",
     "WorkerUtilMixin"

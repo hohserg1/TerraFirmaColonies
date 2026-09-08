@@ -1,13 +1,16 @@
 package net.ckeeze.terrafirmacolonies;
 
+import net.ckeeze.terrafirmacolonies.api.TFCContainers;
 import net.ckeeze.terrafirmacolonies.api.TFCCraftingTypes;
 import net.ckeeze.terrafirmacolonies.api.TFCEquipmentTypes;
 import net.ckeeze.terrafirmacolonies.placementhandlers.PlacementHandlerInitializer;
+import net.ckeeze.terrafirmacolonies.smith.ScreenCraftingAnvil;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -23,12 +26,12 @@ public class Terrafirmacolonies {
     public Terrafirmacolonies(FMLJavaModLoadingContext context) {
         TFCEquipmentTypes.DEFERRED_REGISTER.register(context.getModEventBus());
         TFCCraftingTypes.DEFERRED_REGISTER.register(context.getModEventBus());
+        TFCContainers.DEFERRED_REGISTER.register(context.getModEventBus());
 
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-
     }
 
     //Initializing Custom PlacementHandlers
@@ -37,7 +40,7 @@ public class Terrafirmacolonies {
         PlacementHandlerInitializer.initHandlers();
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-
+    private void commonSetup(final FMLClientSetupEvent event) {
+        MenuScreens.register(TFCContainers.craftingAnvil.get(), ScreenCraftingAnvil::new);
     }
 }
